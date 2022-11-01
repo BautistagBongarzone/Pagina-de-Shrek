@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="imagenes/shrek icon.png">
+    <link rel="stylesheet" href="acercade.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Acerca de...</title>
+  </head>
+   <body>
+    <header>
+      <a href="https://www.youtube.com/watch?v=o-L6qwRlt5M&ab_channel=AmazonPrimeVideoLATAM" target="_blank"><h1 id="titulo"><img src="imagenes/paginainicio/shrek tutilo.webp" alt="shrek" ></h1></a>
+    </header> 
+      <div class="contenedor">
+    <nav>  
+      <ul class="navegación">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="personajes.html">Personajes</a></li>
+          <li><a href="curiosidades.html">Curiosidades</a></li>
+          <li><a href="acercade.html">Acerca de</a></li>
+      </ul>
+    </nav>
+        </div>
+
+
+
+      <div class="cards-grid">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+
+            <div class="flip-card-front">
+              <img src="imagenes/burrocard.jpg" alt="burro" style="width: 320px; height: 504px; border-radius:20px;">
+              </div>
+
+                <div class="flip-card-back">
+                    <h1>Pogonza Luis</h1>
+                    <p>Aprendiendo desarrollo web</p>
+                    
+                </div>
+          </div>
+        </div>
+
+        <!---segunda tarjeta-->
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+
+            <div class="flip-card-front">
+                <img src="imagenes/shrekcard.jpg" alt="shrek" style="width: 320px; height: 504px; border-radius:20px;">
+              </div>
+
+                <div class="flip-card-back">
+                    <h1>Carrazana Jonatan</h1>
+                    <p>Aprendiendo desarrollo web</p>
+                  
+                </div>
+          </div>
+        </div>
+
+        <!--tercer tarjeta-->
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+
+            <div class="flip-card-front">
+                <img src="imagenes/gatocard.jpg" alt="gato" style="width: 320px; height: 504px; border-radius:20px;">
+              </div>
+
+                <div class="flip-card-back">
+                    <h1>Garcia Bongarzone Bautista</h1>
+                    <p>Aprendiendo desarrollo web</p>
+                    
+                </div>
+          </div>
+        </div>
+
+      </div>
+      <!--FIN CARD -->
+      
+      <!--FORMULARIO-->
+      <form action="https://formspree.io/f/moqbkgnw"method="POST">
+
+      <section class="form-register">
+    <h4>Formulario Registro, si quiere formar parte de nosotros</h4>
+    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+    <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+    <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+    <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+    <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+    <input class="botons" type="submit" value="Registrar">
+    <p><a href="#">¿Ya tengo Cuenta?</a></p>
+  </section>
+
+     </form>
+
+     <script>
+      const $form = document.querySelector('#form')
+
+      $form.addEventListener('submit' , handlesubmit)
+
+       async function handlesubmit(event){
+        event.preventDeflault()
+        const form = new FormData(this)
+        const response = await fetch(this.action, {
+          method: this.method,
+          body: form,
+          headers: {
+            'Accept': 'application/json'
+          }
+        })
+        if (response.ok){
+          this.reset()
+          alert('Gracias por contactarnos, te escribiremos pronto :)')
+        }
+      }
+
+
+     </script>
+      
+  <footer class="footer">
+    <div class="footer_items">
+      <ul>
+        <a href="https://www.instagram.com/dreamworks/" target="_blank"><li><i class="fa-brands fa-instagram"></i></li></a>
+        <li><i class="fa-regular fa-envelope"></i></li>
+        <li><i class="fa-solid fa-location-dot"></i></li>
+      </ul>
+
+    </div>
+    <div class="copyright">
+      <h4>
+        @2022, <a href="https://github.com/BautistagBongarzone" target="_blank">Bongarzone</a>- <a href="https://github.com/LuchiniS2" target="_blank">Carrazana</a> -<a href="https://github.com/JonasPDeveloper" target="_blank">Pogonza</a>. Todos los derechos reservados
+    </h4>
+    </div>
+       </footer>
+  </body>
+</html>
+

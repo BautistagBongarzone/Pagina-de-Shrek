@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moul&display=swap');
+
+
+*{
+   box-sizing: border-box;
+   margin: 0%;
+   padding: 0%;
+   font-family: 'Moul';
+    
+}
+
+   
+body{
+    background-color:#a1c349ff;
+
+}
+nav{
+    background-color:#cad593ff;
+    display: flex;
+    justify-content: center;
+    
+    
+
+    
+    
+}
+.contenedor{
+    position:sticky;
+    top: 0;
+    
+}
+header #titulo #menu-check{
+    display: none;
+}
+header #titulo #menu{
+    display: none;
+}
+nav .navegación li{
+    display: inline-block;
+    justify-content:center;
+    background-color: #cad593ff;
+    padding: 0 40px;
+    list-style: none;
+    font-family: 'Moul';
+    position: sticky;
+    
+}
+nav a{
+    text-decoration: none;
+    color: #243010ff;
+    display: block;
+    padding: 10px;
+   
+}
+
+    
+
+
+
+.navegación  a:hover{
+    background-color:#ffffb3ff;
+    transform: scale(1.1);
+    transition: 0.2s;
+    border-radius: 10px;
+    content: 5px 20px;
+    
+    
+}
+
+header #titulo{
+    background-color: #243010ff;
+    display: flex;
+    justify-content: center;
+    color: antiquewhite;
+    height: 100px;
+    
+}
+ #titulo  img:hover{ 
+    transform: scale(5px,5px);
+    transition: 1,2s;
+    
+}
+
+.poster{
+    
+   
+    display: flex;
+    justify-content:center;
+    margin: 20px;
+    height: 400px;
+    width: auto;
+    padding: 15px;
+    border-radius: 20px;
+    
+}
+.area1{
+    background-color:aliceblue;
+    display: inline-block;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 30px;
+    font-family:'Hammersmith One' ;
+    border:solid;
+    
+    
+}
+.area1 .posterback{
+    background-color:aliceblue;
+    display: inline-block;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 30px;
+    font-family:'Hammersmith One' ;
+    border:solid;
+    bottom: 30px;
+}
+.sinopsis p{ 
+    display: flex;
+    justify-content:center ;
+    margin:10px;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    font-family:'Hammersmith One' ;
+    text-align: center;
+    font-size: 20px;
+    padding-left: auto;
+
+}
+
+
+.premioscards{
+    margin: 0;
+    border-radius: 10px;
+    background-image:url(https://img.freepik.com/foto-gratis/material-fondo-textura-tablon-madera_53876-146881.jpg?w=2000);
+}
+
+.premios{
+    color: #9aba46ff;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    background-image: url(https://t3.ftcdn.net/jpg/02/98/62/46/360_F_298624693_ME6Vstt4mgB1ICNBtaZPTxIIj13HQ0hd.jpg);
+}
+
+.premioscards{
+    
+    background-color: bisque;
+    margin:0%;
+    
+    
+}
+.premioscards{
+    font-family:'Hammersmith One';
+    margin: 0%;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    display: flex;  
+    
+}
+.cardspremios h4{
+  display: flex;
+  justify-content:center;
+  font-family:'Hammersmith One' ;
+  font-size: 25px;
+  margin-top: 50px;
+  
+}
+
+ .cardspremios {
+    width: 230px;
+    height: 210px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba( 0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 0.25s;
+    background-color:bisque; 
+    margin: 20px;
+    border: solid;
+    border-radius: 60px;
+    
+}
+.cardspremios sub{
+    font-family:'Hammersmith One';
+    font-size: 18px;
+    color:darkslategrey;
+}
+
+
+
+
+.reparto{ 
+    background-image: url(https://t3.ftcdn.net/jpg/02/98/62/46/360_F_298624693_ME6Vstt4mgB1ICNBtaZPTxIIj13HQ0hd.jpg);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    color: #9aba46ff;
+}
+.repartocontainer{
+    width: auto;
+    height:auto;
+    flex-wrap: wrap;
+    margin-top: 0;
+    background-color: #637a2dff;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    
+    margin: 20px;
+    border-radius: 20px;
+   
+      
+}
+.repartocontainer .cards{
+    width: 230px;
+    height: 330px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba( 0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 0.25s;
+    background-color: aliceblue; 
+    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-left: 115px;
+    flex-wrap: wrap;
+}
+.repartocontainer .cards:hover{
+    transform: translateY(-15px);
+    box-shadow:  0 12px 16px rgba( 0, 0, 0, 0.2);
+
+}
+.repartocontainer .cards img{
+    width: 150px;
+    height: 200px;
+    border-radius: 12px;
+    margin-top: 18px;
+}
+.repartocontainer .cards h5{
+    font-size: 23px;
+    
+}
+.repartocontainer .cards sub{
+    font-family:'Hammersmith One';
+    font-size: 18px;
+}
+.repartocontainer a{
+    text-decoration: none;
+    color: black;
+}
+.footer{
+    background-color:#243010ff;
+    padding: 20px;
+   
+    
+}
+.footer .footer_items{
+   color: bisque;
+   display: flex;
+   justify-content:center;
+   font-size: 30px;
+   
+
+}
+.footer .footer_items li{
+    list-style: none;
+    display: inline-block;
+    justify-content: center;
+    margin: 10px;
+}
+.footer .footer_items li:hover{
+   color: rgba(253, 208, 153, 0.43);
+   transform: rotate(15deg);
+}
+.footer .footer_items a{
+     color: bisque;
+}
+.copyright{
+    display: flex; 
+    justify-content: center;
+    color: bisque;
+    
+  }
+  .copyright h4{
+    font-size: 15px;
+  }
+  .copyright a{
+     text-decoration: none;
+     color: bisque;
+  }
+  .copyright a:hover{
+    color:  rgba(253, 208, 153, 0.43);
+  }
+  @media only screen  and (max-width:768px){
+    body{
+        overflow-x:hidden ;
+    }
+    nav{
+        background-color:#cad593ff;
+        display: flex;
+        justify-content: center;    
+        
+    }
+    nav .navegación li{
+        display: flex;
+        justify-content:center;
+        background-color: #cad593ff;
+        padding: 0 30px;
+        list-style: none;
+        font-family: 'Moul';
+        position: sticky;
+        
+    }
+    nav a{
+        text-decoration: none;
+        color: #243010ff;
+        display: block;
+        padding: 5px;
+        font-size: 13px;
+    }
+    header{
+        
+        background-color:#243010ff ;
+    }
+    header #titulo{
+        display: flex;
+        justify-content: center;
+        margin-left: 10px;
+    }
+    header #titulo img{
+        width: 210px;
+        height: 100px;
+    }
+
+   body #menu-check:not(:checked) nav .navegación{
+        display: none;
+    }
+   body #menu-check:checked nav .navegación{
+        display: block;
+    }
+   .area1{
+    display: flex;
+    width: auto;
+    height: auto;
+   }
+   .poster{
+    display: flex;
+    justify-content:center;
+    margin: 20px;
+    height: 200px;
+    width: auto;
+    padding: 15px;
+    border-radius: 20px;
+    
+}
+.sinopsis{
+    overflow: auto;
+}
+   .sinopsis p{
+     display: flex;
+    justify-content:center ;
+    margin:10px;
+    margin: auto;
+    font-family:'Hammersmith One' ;
+    text-align: center;
+    font-size: 14px;
+    padding-left: auto;
+    margin-left: 10%;
+   }
+   .premios{
+    font-size: 18px;
+   }
+   .premioscards{
+    display: flex;
+    justify-content: center;
+    
+   }
+   .cardspremios h4{
+    display: flex;
+    justify-content:center;
+    font-family:'Hammersmith One' ;
+    font-size: 20px;
+    margin-top: 35px;
+    
+  }
+  
+   .cardspremios {
+      width: 210px;
+      height: 190px;
+      border-radius: 8px;
+      box-shadow: 0 2px 2px rgba( 0, 0, 0, 0.2);
+      text-align: center;
+      transition: all 0.25s;
+      background-color:bisque; 
+      margin: 20px;
+      border: solid;
+      border-radius: 60px;
+      
+  }
+  .cardspremios sub{
+      font-family:'Hammersmith One';
+      font-size: 15px;
+      color:darkslategrey;
+  }
+  .reparto{
+    font-size: 27px;
+    padding: 10px;
+  }
+   .repartocontainer{
+    display:flex;
+    grid-template-columns: 100%;
+    justify-content: center;
+    
+        
+
+    
+   }
+    .repartocontainer .cards{
+        width: 200px;
+        height: 295px;
+        border-radius: 8px;
+        box-shadow: 0 2px 2px rgba( 0, 0, 0, 0.2);
+        text-align: center;
+        transition: all 0.25s;
+        background-color: aliceblue; 
+        margin-bottom: 20px;
+        margin-top: 50px;
+        margin-left: auto;
+        flex-wrap: wrap;
+    
+   }
+    .repartocontainer .cards img{
+    width: 125px;
+    height:150px;
+    border-radius: 12px;
+    
+   }
+   .repartocontainer .cards h5{
+    font-size: 20px;
+    
+}
+.repartocontainer .cards sub{
+    font-family:'Hammersmith One';
+    font-size: 18px;
+}
+    .footer .copyright h4{
+        font-size: 15px;
+        
+    }
+  }
+
+  @media only screen  and (max-width:500px){
+    body{
+        overflow-x:hidden ;
+    }
+    nav{
+        background-color:#cad593ff;
+        display: flex;
+        justify-content: center;    
+        
+    }
+    nav .navegación li{
+        display: flex;
+        justify-content:center;
+        background-color: #cad593ff;
+        padding: 0 30px;
+        list-style: none;
+        font-family: 'Moul';
+        position: sticky;
+        
+    }
+    nav a{
+        text-decoration: none;
+        color: #243010ff;
+        display: block;
+        padding: 5px;
+        font-size: 13px;
+    }
+    header{
+        
+        background-color:#243010ff ;
+    }
+    header #titulo{
+        display: flex;
+        justify-content: center;
+        margin-left: 10px;
+    }
+    header #titulo img{
+        width: 210px;
+        height: 100px;
+    }
+   body #menu-check:not(:checked) nav .navegación{
+        display: none;
+    }
+   body #menu-check:checked nav .navegación{
+        display: block;
+    }
+   .area1{
+    display: flex;
+    width: auto;
+    height: auto;
+   }
+   .poster{
+    display: flex;
+    justify-content:center;
+    margin: 20px;
+    height: 200px;
+    width: auto;
+    padding: 15px;
+    border-radius: 20px;
+    
+}
+.sinopsis{
+    overflow: auto;
+}
+   .sinopsis p{
+     display: flex;
+    justify-content:center ;
+    margin:10px;
+    margin: auto;
+    font-family:'Hammersmith One' ;
+    text-align: center;
+    font-size: 14px;
+    padding-left: auto;
+    margin-left: 10%;
+   }
+   .premioscards{
+    display: flex;
+    justify-content: center;
+    
+   }
+   .cardspremios h4{
+    display: flex;
+    justify-content:center;
+    font-family:'Hammersmith One' ;
+    font-size: 20px;
+    margin-top: 35px;
+    
+  }
+  
+   .cardspremios {
+      width: 210px;
+      height: 190px;
+      border-radius: 8px;
+      box-shadow: 0 2px 2px rgba( 0, 0, 0, 0.2);
+      text-align: center;
+      transition: all 0.25s;
+      background-color:bisque; 
+      margin: 20px;
+      border: solid;
+      border-radius: 60px;
+      
+  }
+  .cardspremios sub{
+      font-family:'Hammersmith One';
+      font-size: 15px;
+      color:darkslategrey;
+  }
+   .repartocontainer{
+    display:flex;
+    grid-template-columns: 100%;
+    justify-content: center;
+    
+        
+
+    
+   }
+    .repartocontainer .cards{
+        width: 200px;
+        height: 295px;
+        border-radius: 8px;
+        box-shadow: 0 2px 2px rgba( 0, 0, 0, 0.2);
+        text-align: center;
+        transition: all 0.25s;
+        background-color: aliceblue; 
+        margin-bottom: 20px;
+        margin-top: 50px;
+        margin-left: auto;
+        flex-wrap: wrap;
+    
+   }
+    .repartocontainer .cards img{
+    width: 125px;
+    height:150px;
+    border-radius: 12px;
+    
+   }
+   .repartocontainer .cards h5{
+    font-size: 20px;
+    
+}
+.repartocontainer .cards sub{
+    font-family:'Hammersmith One';
+    font-size: 18px;
+}
+.footer .copyright{
+    
+}
+    
+  }
